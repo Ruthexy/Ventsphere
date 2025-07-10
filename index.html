@@ -1,396 +1,490 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>VENTSPHERE</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="output.css">
-
-</head>
-<body class="bg-white text-slate-800">
-
-  
-  <header class="flex justify-between items-center p-6 border-b w-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VENTSPHERE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     
-    <div class="flex w-full justify-between gap-10">
+  </head>
+  <body class="bg-white text-slate-800">
+    <header class="flex justify-between items-center p-6 border-b w-full">
+      <div class="flex w-full justify-between gap-10">
         <div class="flex items-center gap-10">
-      <span class="text-xl font-bold">
-        <img src="assets/Logo (2).png" alt="logo">
-      </span>
-      <nav class="hidden md:flex gap-6">
-        <a href="#" class="hover:underline">Service</a>
-        <a href="#" class="hover:underline">About us</a>
-        <a href="#" class="hover:underline">Benefits</a>
-        <a href="#" class="hover:underline">FAQ</a>
-      </nav>
+          <span class="text-xl font-bold">
+            <img src="assets/Logo (2).png" alt="logo" />
+          </span>
+          <nav class="hidden md:flex items-center gap-6">
+            <a href="#" class="hover:underline">Services</a>
+            <a href="#" class="hover:underline">About us</a>
+            <a href="#" class="hover:underline">Benefits</a>
+            <a href="#" class="hover:underline">FAQ</a>
+          </nav>
+        </div>
+        <div class="md:hidden relative">
+          <button id="menu-toggle" class="text-gray-600">
+            ☰
+          </button>
+          <div id="mobile-menu" class="bg-white shadow-sm absolute top-2 right-0 px-4 pb-4 hidden ">
+          <a href="#" class="block w-full text-nowrap py-2 hover:text-[#EAE68B]">Services</a>
+          <a href="#" class="block w-full text-nowrap py-2 hover:text-[#EAE68B]">About Us</a>
+          <a href="#" class="block w-full text-nowrap py-2 hover:text-[#EAE68B]">Benefits</a>
+          <a href="#" class="block w-full text-nowrap py-2 hover:text-[#EAE68B]">FAQs</a>
+        </div>
+        </div>
+        
+        <div class="flex justify-end max-sm:hidden gap-10 items-center">
+          <button class="text-sm">Book a Strategy Call</button>
+          <button
+            class="text-sm bg-[#1F253F] text-[#FFFFFF] px-6 py-4 rounded-xl"
+          >
+            Partner with Us
+          </button>
+        </div>
       </div>
-      <div class="flex justify-end  gap-10 items-center">
-        <button class="text-sm ">Book a Strategy Call</button>
-        <button class="text-sm bg-[#1F253F] text-[#FFFFFF] px-6 py-4 rounded-xl">Partner with Us</button>
-      </div>
-    </div>
-  </header>
+    </header>
 
- 
-  <section class="grid md:grid-cols-2 gap-8 p-10 items-center">
-    <div class="flex flex-col gap-6">
-      <h1 class="text-6xl text-[#1F253F] font-semibold mb-4">Providing Support for Startups</h1>
-      <p class="mb-6 max-w-md text-slate-600">
-        Empowering visionary entrepreneurs with the capital and support needed to transform innovative ideas into successful businesses.
-      </p>
-      <div class="flex gap-4">
-        <button class="bg-[#1F253F] text-white px-6 py-4 rounded-xl">Partner with us</button>
-        <button class="bg-[#EAE68B] text-black px-6 py-4 rounded-xl">Book a Strategy Call</button>
-      </div>
-    </div>
-    <div>
-      <img src="assets/Rectangle 1.png" alt="Team Meeting" class="rounded-xl shadow-md w-full" />
-    </div>
-  </section>
-
- 
-  <section>
-    <div class="flex justify-center gap-8 py-4 text-slate-400 text-sm border-t border-b">
-    <p>Trusted Partnership with 100+ companies</p>
-    
-      <span> <img src="assets/Zippo logo.png" alt="Zippo"></span>
-      <span> <img src="assets/grammarly logo.png" alt="grammarly"></span>
-      <span> <img src="assets/GoodLeap_Orange_Logo logo.png" alt="goodleap"></span>
-      <span> <img src="assets/google logo.png" alt="google"></span>
-      <span> <img src="assets/Group (1).png" alt="loom"></span>
-  </div>
-    
-  </section>
-
- 
-  <section class="p-10 text-center">
-    <h2 class="text-xs tracking-wider text-yellow-600 mb-2">WHO WE ARE</h2>
-    <h3 class="text-2xl font-semibold mb-8">Your Dedicated Partner in Startup Success</h3>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto" >
-      <div class="bg-[#1F253F] text-white p-6 rounded-xl">
-        <h4 class="font-semibold mb-2">Our Mission</h4>
-        <p class="text-sm text-slate-300">
-          Our mission is to support startups by providing not only financial investment but also strategic guidance, mentorship, and access to a robust network of industry experts.
+    <section class="grid md:grid-cols-2 gap-8 p-10 items-center">
+      <div class="flex flex-col gap-6">
+        <h1 class="text-4xl md:text-6xl text-[#1F253F] font-semibold mb-4">
+          Providing Support for Startups
+        </h1>
+        <p class="mb-6 max-w-md text-slate-600">
+          Empowering visionary entrepreneurs with the capital and support needed
+          to transform innovative ideas into successful businesses.
         </p>
-      </div>
-      <div class="bg-[#1D3D3A] text-white p-6 rounded-xl">
-        <h4 class="font-semibold mb-2">Our Vision</h4>
-        <p class="text-sm text-slate-300">
-          To be the leading venture capital agency that fuels innovation and empowers entrepreneurs, creating a thriving ecosystem where visionary startups can flourish and make a lasting impact on the world.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section class="bg-[#f9fafb] py-20 px-6 md:px-12">
-    <div class="max-w-7xl mx-auto text-center">
-
-      
-      <p class="text-sm font-semibold text-yellow-600 uppercase tracking-wide mb-3">What We Do</p>
-      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-        Financial Backing You <br class="hidden md:block" />
-        Need to Succeed
-      </h2>
-      <p class="text-gray-600 max-w-2xl mx-auto mb-12">
-        We understand that financial support is foundational to startup growth, which is why we offer:
-      </p>
-
-
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        
-        
-        <div class="bg-white shadow rounded-2xl p-6 flex gap-4 items-start">
-          <div class="bg-green-900 text-white rounded-full p-3">
-            <img src="assets/money-send-circle.png" alt="">
-            
-          </div>
-          <div>
-            <h3 class="text-lg font-semibold text-gray-900">Seed Funding</h3>
-            <p class="text-gray-600 mt-1">
-              We provide initial capital to early-stage startups, helping them turn innovative ideas into viable businesses.
-            </p>
-          </div>
-        </div>
-
-        
-        <div class="bg-white shadow rounded-2xl p-6 flex gap-4 items-start">
-          <div class="bg-green-900 text-white rounded-full p-3">
-            
-             <img src="assets/school-tie.png" alt="">
-            
-          </div>
-          <div>
-            <h3 class="text-lg font-semibold text-gray-900">Mentorship and Coaching</h3>
-            <p class="text-gray-600 mt-1">
-              We provide flexible funding options designed to match the unique needs of your startup, helping you grow at every stage.
-            </p>
-          </div>
-        </div>
-
-        
-        <div class="bg-white shadow rounded-2xl p-6 flex gap-4 items-start">
-          <div class="bg-green-900 text-white rounded-full p-3">
-           
-             <img src="assets/affiliate.png" alt="">
-            
-          </div>
-          <div>
-            <h3 class="text-lg font-semibold text-gray-900">Post-Investment Support</h3>
-            <p class="text-gray-600 mt-1">
-              We provide flexible funding options designed to match the unique needs of your startup, helping you grow at every stage.
-            </p>
-          </div>
-        </div>
-
-        
-        <div class="bg-white shadow rounded-2xl p-6 flex gap-4 items-start">
-          <div class="bg-green-900 text-white rounded-full p-3">
-            
-             <img src="assets/agreement-01.png" alt="">
-
-          </div>
-          <div>
-            <h3 class="text-lg font-semibold text-gray-900">Strategic Partnerships</h3>
-            <p class="text-gray-600 mt-1">
-              Access our extensive network to forge partnerships that can open doors and drive meaningful growth for your business.
-            </p>
-          </div>
+        <div class="flex flex-col md:flex-row items-center gap-4">
+          <button
+            class="bg-[#1F253F] text-white px-6 py-4 rounded-xl w-full md:w-fit"
+          >
+            Partner with us
+          </button>
+          <button
+            class="bg-[#EAE68B] text-black px-6 py-4 rounded-xl w-full md:w-fit"
+          >
+            Book a Strategy Call
+          </button>
         </div>
       </div>
-
-      
-      <div class="mt-12">
-        <a href="#" class="inline-block bg-gray-900 text-white px-6 py-4 rounded-xl text-sm font-medium hover:bg-gray-800 transition">
-          Partner with Us →
-        </a>
-      </div>
-    </div>
-  </section>
-
-
-  <section class="py-20 px-6 md:px-16 space-y-20">
-
-    
-    <div class="grid md:grid-cols-2 gap-10 items-center">
-
       <div>
-        <h2 class="text-3xl md:text-4xl font-bold text-[#1F253F] mb-4">
-          Unlocking Potential for Ambitious Startups
+        <img
+          src="assets/Rectangle 1.png"
+          alt="Team Meeting"
+          class="rounded-xl shadow-md w-full"
+        />
+      </div>
+    </section>
+
+    <section>
+      <div
+        class="flex justify-center gap-8 py-4 text-slate-400 text-sm border-t border-b"
+      >
+        <p>Trusted Partnership with 100+ companies</p>
+
+        <span> <img src="assets/Zippo logo.png" alt="Zippo" /></span>
+        <span> <img src="assets/grammarly logo.png" alt="grammarly" /></span>
+        <span>
+          <img src="assets/GoodLeap_Orange_Logo logo.png" alt="goodleap"
+        /></span>
+        <span> <img src="assets/google logo.png" alt="google" /></span>
+        <span> <img src="assets/Group (1).png" alt="loom" /></span>
+      </div>
+    </section>
+
+    <section class="p-10 text-center">
+      <h2 class="text-xs tracking-wider text-[#EAE68B] mb-2">WHO WE ARE</h2>
+      <h3 class="text-2xl font-semibold mb-8">
+        Your Dedicated Partner in Startup Success
+      </h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+        <div class="bg-[#1F253F] text-white p-6 rounded-xl">
+          <h4 class="font-semibold mb-2">Our Mission</h4>
+          <p class="text-sm text-slate-300">
+            Our mission is to support startups by providing not only financial
+            investment but also strategic guidance, mentorship, and access to a
+            robust network of industry experts.
+          </p>
+        </div>
+        <div class="bg-[#1D3D3A] text-white p-6 rounded-xl">
+          <h4 class="font-semibold mb-2">Our Vision</h4>
+          <p class="text-sm text-slate-300">
+            To be the leading venture capital agency that fuels innovation and
+            empowers entrepreneurs, creating a thriving ecosystem where
+            visionary startups can flourish and make a lasting impact on the
+            world.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-[#f9fafb] py-20 px-6 md:px-12">
+      <div class="max-w-7xl mx-auto text-center">
+        <p
+          class="text-sm font-semibold text-[#EAE68B] uppercase tracking-wide mb-3"
+        >
+          What We Do
+        </p>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          Financial Backing You <br class="hidden md:block" />
+          Need to Succeed
         </h2>
-        <p class="text-[#6B7280] mb-6 max-w-lg">
-          We empower startups with essential resources and guidance to thrive. Our tailored support provides not only capital but also strategic insights, mentorship, and access to a vast network of industry experts.
+        <p class="text-gray-600 max-w-2xl mx-auto mb-12">
+          We understand that financial support is foundational to startup
+          growth, which is why we offer:
         </p>
-        <a href="#" class="inline-block bg-[#1C1C4B] text-white px-6 py-4 rounded-xl text-sm font-medium hover:bg-[#2a2a6a] transition">
-          Partner with Us →
-        </a>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="bg-white shadow rounded-2xl p-6 flex gap-4 items-start">
+            <div class="bg-green-900 text-white rounded-full p-3">
+              <img src="assets/money-send-circle.png" alt="" />
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-gray-900">Seed Funding</h3>
+              <p class="text-gray-600 mt-1">
+                We provide initial capital to early-stage startups, helping them
+                turn innovative ideas into viable businesses.
+              </p>
+            </div>
+          </div>
+
+          <div class="bg-white shadow rounded-2xl p-6 flex gap-4 items-start">
+            <div class="bg-green-900 text-white rounded-full p-3">
+              <img src="assets/school-tie.png" alt="" />
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-gray-900">
+                Mentorship and Coaching
+              </h3>
+              <p class="text-gray-600 mt-1">
+                We provide flexible funding options designed to match the unique
+                needs of your startup, helping you grow at every stage.
+              </p>
+            </div>
+          </div>
+
+          <div class="bg-white shadow rounded-2xl p-6 flex gap-4 items-start">
+            <div class="bg-green-900 text-white rounded-full p-3">
+              <img src="assets/affiliate.png" alt="" />
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-gray-900">
+                Post-Investment Support
+              </h3>
+              <p class="text-gray-600 mt-1">
+                We provide flexible funding options designed to match the unique
+                needs of your startup, helping you grow at every stage.
+              </p>
+            </div>
+          </div>
+
+          <div class="bg-white shadow rounded-2xl p-6 flex gap-4 items-start">
+            <div class="bg-green-900 text-white rounded-full p-3">
+              <img src="assets/agreement-01.png" alt="" />
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-gray-900">
+                Strategic Partnerships
+              </h3>
+              <p class="text-gray-600 mt-1">
+                Access our extensive network to forge partnerships that can open
+                doors and drive meaningful growth for your business.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-12">
+          <a
+            href="#"
+            class="inline-block bg-gray-900 text-white px-6 py-4 rounded-xl text-sm font-medium hover:bg-gray-800 transition"
+          >
+            Partner with Us →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 px-6 md:px-16 space-y-20">
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-bold text-[#1F253F] mb-4">
+            Unlocking Potential for Ambitious Startups
+          </h2>
+          <p class="text-[#6B7280] mb-6 max-w-lg">
+            We empower startups with essential resources and guidance to thrive.
+            Our tailored support provides not only capital but also strategic
+            insights, mentorship, and access to a vast network of industry
+            experts.
+          </p>
+          <a
+            href="#"
+            class="inline-block bg-[#1C1C4B] text-white px-6 py-4 rounded-xl text-sm font-medium hover:bg-[#2a2a6a] transition"
+          >
+            Partner with Us →
+          </a>
+        </div>
+
+        <div>
+          <img
+            src="assets/Image.png"
+            alt="Team Discussion"
+            class="rounded-xl shadow-lg w-full object-cover"
+          />
+        </div>
       </div>
 
-       
-      <div>
-        <img src="assets/Image.png" alt="Team Discussion" class="rounded-xl shadow-lg w-full object-cover" />
-      </div>
-    </div>
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <img
+            src="assets/Image (1).png"
+            alt="Speaker Presentation"
+            class="rounded-xl shadow-lg w-full object-cover"
+          />
+        </div>
 
-
-    <div class="grid md:grid-cols-2 gap-10 items-center">
-      
-      <div>
-        <img src="assets/Image (1).png" alt="Speaker Presentation" class="rounded-xl shadow-lg w-full object-cover" />
+        <div>
+          <h2 class="text-3xl md:text-4xl font-bold text-[#1F253F] mb-4">
+            Partner with seasoned professionals
+          </h2>
+          <p class="text-[#6B7280] mb-6 max-w-lg">
+            We bring extensive industry experience and insights. Our team is
+            dedicated to providing you with tailored advice and mentorship,
+            ensuring you navigate challenges effectively and capitalize on
+            opportunities to drive your startup’s success.
+          </p>
+          <a
+            href="#"
+            class="inline-block bg-[#1C1C4B] text-white px-6 py-4 rounded-xl text-sm font-medium hover:bg-[#2a2a6a] transition"
+          >
+            Partner with Us →
+          </a>
+        </div>
       </div>
-      
-      <div>
-        <h2 class="text-3xl md:text-4xl font-bold text-[#1F253F] mb-4">
-          Partner with seasoned professionals
+    </section>
+
+    <section class="py-20 px-6 md:px-16 text-center">
+      <div class="mb-12">
+        <p class="text-xs tracking-widest uppercase text-[#B6C06F] mb-2">
+          Testimonials
+        </p>
+        <h2 class="text-3xl md:text-4xl font-bold text-[#1E293B]">
+          Success Stories from<br />
+          Visionary Founders
         </h2>
-        <p class="text-[#6B7280] mb-6 max-w-lg">
-          We bring extensive industry experience and insights. Our team is dedicated to providing you with tailored advice and mentorship, ensuring you navigate challenges effectively and capitalize on opportunities to drive your startup’s success.
-        </p>
-        <a href="#" class="inline-block bg-[#1C1C4B] text-white px-6 py-4 rounded-xl text-sm font-medium hover:bg-[#2a2a6a] transition">
-          Partner with Us →
-        </a>
       </div>
-    </div>
 
-  </section>
-
-  
-  <section class="py-20 px-6 md:px-16 text-center">
-    
-    <div class="mb-12">
-      <p class="text-xs tracking-widest uppercase text-[#B6C06F] mb-2">Testimonials</p>
-      <h2 class="text-3xl md:text-4xl font-bold text-[#1E293B]">
-        Success Stories from<br />
-        Visionary Founders
-      </h2>
-    </div>
-
-    
-    <div class="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
-
-
-      <div class="bg-cover bg-center rounded-xl overflow-hidden relative">
-        <div class="bg-black bg-opacity-50 p-6 h-full flex flex-col justify-end text-left text-white space-y-4">
-          <div class="text-xl leading-snug">
-            <p class="text-xs uppercase opacity-70">Word from Founder</p>
-            <p class="text-2xl font-medium mt-2">“ We’re committed to empowering startups with the funding and guidance they need to succeed.”</p>
+      <div class="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        <div class="bg-cover bg-center rounded-xl overflow-hidden relative">
+          <div
+            class="bg-black bg-opacity-50 p-6 h-full flex flex-col justify-end text-left text-white space-y-4"
+          >
+            <div class="text-xl leading-snug">
+              <p class="text-xs uppercase opacity-70">Word from Founder</p>
+              <p class="text-2xl font-medium mt-2">
+                “ We’re committed to empowering startups with the funding and
+                guidance they need to succeed.”
+              </p>
+            </div>
+            <p class="text-sm font-semibold">— Augustine Ifenna</p>
           </div>
-          <p class="text-sm font-semibold">— Augustine Ifenna</p>
+        </div>
+
+        <div
+          class="bg-[#1C1C4B] text-white rounded-xl p-6 flex flex-col justify-between space-y-6"
+        >
+          <p class="text-lg leading-relaxed">
+            “ Ventsphere’s support has been pivotal, providing both the
+            resources and expertise needed to scale our business. ”
+          </p>
+          <div class="flex items-center space-x-3">
+            <img
+              src="assets/Rectangle 3.png"
+              alt="Henry Orton"
+              class="w-10 h-10 rounded-full object-cover"
+            />
+            <img
+              src="assets/Rectangle 4.png"
+              alt="Henry Orton"
+              class="w-10 h-10 rounded-full object-cover"
+            />
+            <div class="text-left text-sm">
+              <p class="font-semibold">Henry Orton</p>
+              <p class="text-gray-300 text-xs">CEO of Daganox</p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="bg-[#123734] text-white rounded-xl p-6 flex flex-col justify-between space-y-6"
+        >
+          <p class="text-lg leading-relaxed">
+            “ Working with Ventsphere gave us the confidence and tools to
+            navigate our industry and achieve our goals. ”
+          </p>
+          <div class="flex items-center space-x-3">
+            <img
+              src="assets/Rectangle 3 (1).png"
+              alt="Henry Orton"
+              class="w-10 h-10 rounded-full object-cover"
+            />
+            <img
+              src="assets/Rectangle 4 (1).png"
+              alt=" Henry Orton"
+              class="w-10 h-10 rounded-full object-cover"
+            />
+            <div class="text-left text-sm">
+              <p class="font-semibold">Henry Orton</p>
+              <p class="text-gray-300 text-xs">CEO of Jobber</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="py-20 px-6 md:px-16 max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-start"
+    >
+      <div>
+        <p class="text-xs uppercase tracking-widest text-[#B6C06F] mb-2">
+          We Have Answers
+        </p>
+        <h2 class="text-4xl font-bold mb-6">Frequently Asked Questions</h2>
+        <p class="text-gray-500 mb-4">
+          Explore the most common inquiries to learn more about how we support
+          startups like yours.
+        </p>
+        <p class="text-gray-500">
+          For more inquiries, reach us at
+          <a
+            href="mailto:contact@ventsphere.com"
+            class="font-semibold text-black hover:underline"
+          >
+            contact@ventsphere.com </a
+          >.
+        </p>
+      </div>
+
+      <div class="space-y-4">
+        <details class="group bg-white rounded-xl p-5 shadow-sm">
+          <summary
+            class="flex justify-between items-center cursor-pointer text-lg font-medium text-[#1E293B]"
+          >
+            <span>What types of startups do you work with?</span>
+            <span class="text-2xl group-open:rotate-45 transition-transform"
+              >+</span
+            >
+          </summary>
+        </details>
+
+        <details class="group bg-white rounded-xl p-5 shadow-sm">
+          <summary
+            class="flex justify-between items-center cursor-pointer text-lg font-medium text-[#1E293B]"
+          >
+            <span>How can I apply for funding?</span>
+            <span class="text-2xl group-open:rotate-45 transition-transform"
+              >+</span
+            >
+          </summary>
+        </details>
+
+        <details class="group bg-white rounded-xl p-5 shadow-sm" open>
+          <summary
+            class="flex justify-between items-center cursor-pointer text-lg font-medium text-[#1E293B]"
+          >
+            <span>What support do you provide after funding?</span>
+            <span class="text-2xl group-open:rotate-45 transition-transform"
+              >+</span
+            >
+          </summary>
+          <hr class="my-4 border-t border-gray-200" />
+          <p class="text-gray-500 leading-relaxed">
+            We offer mentorship, strategic guidance, and access to our network
+            of industry experts to help you grow your business successfully.
+          </p>
+        </details>
+
+        <details class="group bg-white rounded-xl p-5 shadow-sm">
+          <summary
+            class="flex justify-between items-center cursor-pointer text-lg font-medium text-[#1E293B]"
+          >
+            <span>How long does the funding process take?</span>
+            <span class="text-2xl group-open:rotate-45 transition-transform"
+              >+</span
+            >
+          </summary>
+        </details>
+      </div>
+    </section>
+
+    <footer class="bg-white text-gray-400 px-6 md:px-16 py-12">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+        <div>
+          <div class="flex items-center gap-2 mb-4">
+            <img src="assets/Logo (2).png" alt="Ventsphere" />
+          </div>
+          <p class="text-sm">
+            Empowering visionary startups to<br />
+            reach new heights through funding<br />
+            and support.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#" class="hover:underline">Our Service</a></li>
+            <li><a href="#" class="hover:underline">Benefits Offered</a></li>
+            <li><a href="#" class="hover:underline">Mission & Vision</a></li>
+            <li><a href="#" class="hover:underline">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-white font-semibold mb-4">Partnership</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#" class="hover:underline">Seed Funding</a></li>
+            <li><a href="#" class="hover:underline">Investor Partner</a></li>
+            <li><a href="#" class="hover:underline">Mentorship</a></li>
+            <li><a href="#" class="hover:underline">Partnership</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-white font-semibold mb-4">Contact Us</h4>
+          <ul class="space-y-2 text-sm">
+            <li>
+              <a href="tel:+11234567890" class="hover:underline"
+                >+1 (123) 456-7890</a
+              >
+            </li>
+            <li>
+              <a href="mailto:contact@ventsphere.com" class="hover:underline"
+                >contact@ventsphere.com</a
+              >
+            </li>
+            <li><a href="#" class="hover:underline">Location Map*</a></li>
+          </ul>
         </div>
       </div>
 
-
-      <div class="bg-[#1C1C4B] text-white rounded-xl p-6 flex flex-col justify-between space-y-6">
-        <p class="text-lg leading-relaxed">
-          “ Ventsphere’s support has been pivotal, providing both the resources and expertise needed to scale our business. ”
-        </p>
-        <div class="flex items-center space-x-3">
-          <img src="assets/Rectangle 3.png" alt="Henry Orton" class="w-10 h-10 rounded-full object-cover">
-          <img src="assets/Rectangle 4.png" alt="Henry Orton" class="w-10 h-10 rounded-full object-cover">
-          <div class="text-left text-sm">
-            <p class="font-semibold">Henry Orton</p>
-            <p class="text-gray-300 text-xs">CEO of Daganox</p>
-          </div>
+      <div
+        class="border-t border-gray-800 mt-12 pt-6 flex flex-col md:flex-row justify-between text-xs text-gray-500"
+      >
+        <p>© 2024 Ventsphere Inc. All Rights Reserved.</p>
+        <div class="flex space-x-4 mt-2 md:mt-0">
+          <a href="#" class="hover:underline">Terms & Condition</a>
+          <span>•</span>
+          <a href="#" class="hover:underline">Privacy Policy</a>
         </div>
       </div>
+    </footer>
+    <script>
+  const toggleButton = document.getElementById("menu-toggle");
+  const mobileMenu = document.getElementById("mobile-menu");
 
+  toggleButton.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+</script>
 
-      <div class="bg-[#123734] text-white rounded-xl p-6 flex flex-col justify-between space-y-6">
-        <p class="text-lg leading-relaxed">
-          “ Working with Ventsphere gave us the confidence and tools to navigate our industry and achieve our goals. ”
-        </p>
-        <div class="flex items-center space-x-3">
-          <img src="assets/Rectangle 3 (1).png" alt="Henry Orton" class="w-10 h-10 rounded-full object-cover">
-          <img src="assets/Rectangle 4 (1).png" alt=" Henry Orton" class="w-10 h-10 rounded-full object-cover">
-          <div class="text-left text-sm">
-            <p class="font-semibold">Henry Orton</p>
-            <p class="text-gray-300 text-xs">CEO of Jobber</p>
-          </div>
-        </div>
-      </div>
-      
-    </div>
-  </section>
-  <section class="py-20 px-6 md:px-16 max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-start">
-    
-
-    <div>
-      <p class="text-xs uppercase tracking-widest text-[#B6C06F] mb-2">We Have Answers</p>
-      <h2 class="text-4xl font-bold mb-6">Frequently Asked Questions</h2>
-      <p class="text-gray-500 mb-4">
-        Explore the most common inquiries to learn more about how we support startups like yours.
-      </p>
-      <p class="text-gray-500">
-        For more inquiries, reach us at
-        <a href="mailto:contact@ventsphere.com" class="font-semibold text-black hover:underline">
-          contact@ventsphere.com
-        </a>.
-      </p>
-    </div>
-
-    
-    <div class="space-y-4">
-      
-      
-      <details class="group bg-white rounded-xl p-5 shadow-sm">
-        <summary class="flex justify-between items-center cursor-pointer text-lg font-medium text-[#1E293B]">
-          <span>What types of startups do you work with?</span>
-          <span class="text-2xl group-open:rotate-45 transition-transform">+</span>
-        </summary>
-      </details>
-
-      
-      <details class="group bg-white rounded-xl p-5 shadow-sm">
-        <summary class="flex justify-between items-center cursor-pointer text-lg font-medium text-[#1E293B]">
-          <span>How can I apply for funding?</span>
-          <span class="text-2xl group-open:rotate-45 transition-transform">+</span>
-        </summary>
-      </details>
-
-      
-      <details class="group bg-white rounded-xl p-5 shadow-sm" open>
-        <summary class="flex justify-between items-center cursor-pointer text-lg font-medium text-[#1E293B]">
-          <span>What support do you provide after funding?</span>
-          <span class="text-2xl group-open:rotate-45 transition-transform">+</span>
-        </summary>
-        <hr class="my-4 border-t border-gray-200" />
-        <p class="text-gray-500 leading-relaxed">
-          We offer mentorship, strategic guidance, and access to our network of industry experts to help you grow your business successfully.
-        </p>
-      </details>
-
-      
-      <details class="group bg-white rounded-xl p-5 shadow-sm">
-        <summary class="flex justify-between items-center cursor-pointer text-lg font-medium text-[#1E293B]">
-          <span>How long does the funding process take?</span>
-          <span class="text-2xl group-open:rotate-45 transition-transform">+</span>
-        </summary>
-      </details>
-
-    </div>
-  </section>
-
-  <footer class="bg-white text-gray-400 px-6 md:px-16 py-12">
-  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
-    
-    
-    <div>
-      <div class="flex items-center gap-2 mb-4">
-       
-        <img src="assets/Logo (2).png" alt="Ventsphere">
-
-      </div>
-      <p class="text-sm">
-        Empowering visionary startups to<br />
-        reach new heights through funding<br />
-        and support.
-      </p>
-    </div>
-
-    
-    <div>
-      <h4 class="text-white font-semibold mb-4">Quick Links</h4>
-      <ul class="space-y-2 text-sm">
-        <li><a href="#" class="hover:underline">Our Service</a></li>
-        <li><a href="#" class="hover:underline">Benefits Offered</a></li>
-        <li><a href="#" class="hover:underline">Mission & Vision</a></li>
-        <li><a href="#" class="hover:underline">FAQ</a></li>
-      </ul>
-    </div>
-
-    
-    <div>
-      <h4 class="text-white font-semibold mb-4">Partnership</h4>
-      <ul class="space-y-2 text-sm">
-        <li><a href="#" class="hover:underline">Seed Funding</a></li>
-        <li><a href="#" class="hover:underline">Investor Partner</a></li>
-        <li><a href="#" class="hover:underline">Mentorship</a></li>
-        <li><a href="#" class="hover:underline">Partnership</a></li>
-      </ul>
-    </div>
-
-
-    <div>
-      <h4 class="text-white font-semibold mb-4">Contact Us</h4>
-      <ul class="space-y-2 text-sm">
-        <li><a href="tel:+11234567890" class="hover:underline">+1 (123) 456-7890</a></li>
-        <li><a href="mailto:contact@ventsphere.com" class="hover:underline">contact@ventsphere.com</a></li>
-        <li><a href="#" class="hover:underline">Location Map*</a></li>
-      </ul>
-    </div>
-  </div>
-
-
-  <div class="border-t border-gray-800 mt-12 pt-6 flex flex-col md:flex-row justify-between text-xs text-gray-500">
-    <p>© 2024 Ventsphere Inc. All Rights Reserved.</p>
-    <div class="flex space-x-4 mt-2 md:mt-0">
-      <a href="#" class="hover:underline">Terms & Condition</a>
-      <span>•</span>
-      <a href="#" class="hover:underline">Privacy Policy</a>
-    </div>
-  </div>
-</footer>
-
-  
-
-</body>
+  </body>
 </html>
